@@ -1,3 +1,4 @@
+CREATE TABLE customer_summary AS
 WITH  cleaned_data as (
 	Select 
 	o.customerid,
