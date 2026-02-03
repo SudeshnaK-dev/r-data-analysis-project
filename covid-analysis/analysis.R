@@ -275,7 +275,7 @@ ggplot(scatter_data, aes(x = new_cases_per_100k, y = new_deaths_per_100k)) +
   ) +
   theme_minimal()
 
-# --------- everything is fine till here------------
+# --------- Check Point ------------
 # Filter valid data until Sep 30, 2023 and aggregate by year
 aggregated_death_data <- full_data %>%
   filter(date < as.Date("2023-10-01")) %>%
@@ -362,3 +362,4 @@ ggplot(predicted_summary_norm, aes(x = factor(year), y = predicted_total_deaths_
     fill = "State"
   ) +
   theme_minimal()
+
